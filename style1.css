@@ -1,0 +1,17 @@
+h1 {
+    color:cadetblue;
+}
+
+.cat-img {
+    border-radius: 35%;  /* 角丸半径を50%にする(=円形にする) */
+    width:  360px;       /* ※縦横を同値に */
+    height: 360px;       /* ※縦横を同値に */
+}
+
+.flex-shrink-0 {
+    margin-top: 2%;
+}
+
+.ranktitle {
+    margin-top: 3%;
+}
