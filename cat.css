@@ -1,0 +1,51 @@
+.title {
+    color:cadetblue;
+    margin: 2%;
+    font-family: "Nico Moji";
+}
+
+.cat-img {
+    border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+    width:  360px;       /* ※縦横を同値に */
+    height: 360px;       /* ※縦横を同値に */
+}
+
+.flex-shrink-0 {
+    margin-top: 2%;
+}
+
+.ranktitle {
+    margin-top: 5%;
+    font-family: "游ゴシック体", "Yu Gothic", "YuGothic", sans-serif;
+}
+
+.cat-ranking {
+    margin-top:     0px;   /* 外側の余白(上側) */
+    margin-right:  10%;    /* 外側の余白(右側) */
+    margin-bottom: 0px;    /* 外側の余白(下側) */
+    margin-left:    10%;   /* 外側の余白(左側) */
+    padding: 0;    /* 内側の余白を消す(念のため) */
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+footer {
+    background: #432;
+    text-align: center;
+    margin-top: 1%;
+    padding: 1% 0;
+}
+
+footer p {
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+.ranking {
+    padding: 1rem 2rem;
+    border-bottom: 3px solid #000;
+    font-family: "Nico Moji";
+    display:inline-block;
+}

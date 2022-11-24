@@ -7,53 +7,202 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style1.css">
-    <title>ねこのきもち（仮）</title>
+    
+    <link rel="stylesheet" href="cat.css">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+
+    <title>ねこのきもち</title>
   </head>
   <body>
-    <h1>ねこのきもち（仮）</h1>
+    <h1 class="title"><i class="fas fa-cat"></i> ねこのきもち(仮)</h1>
+    
+    <!-- カルーセル -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/cat-sample.png" class="d-block w-100" alt="みつめるねこ">
+        </div>
+        <div class="carousel-item">
+          <img src="img/cat-sample2.png" class="d-block w-100" alt="くろねこ">
+        </div>
+        <div class="carousel-item">
+          <img src="img/cat-sample3.png" class="d-block w-100" alt="ねことたんぽぽ">
+        </div>
+      </div>
+    </div>
 
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trophy" viewBox="0 0 16 16">
-        <path d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5c0 .538-.012 1.05-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33.076 33.076 0 0 1 2.5.5zm.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935zm10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935zM3.504 1c.007.517.026 1.006.056 1.469.13 2.028.457 3.546.87 4.667C5.294 9.48 6.484 10 7 10a.5.5 0 0 1 .5.5v2.61a1 1 0 0 1-.757.97l-1.426.356a.5.5 0 0 0-.179.085L4.5 15h7l-.638-.479a.501.501 0 0 0-.18-.085l-1.425-.356a1 1 0 0 1-.757-.97V10.5A.5.5 0 0 1 9 10c.516 0 1.706-.52 2.57-2.864.413-1.12.74-2.64.87-4.667.03-.463.049-.952.056-1.469H3.504z"/>
-      </svg>
+    <div class="cat-ranking">
+    <h2 class="ranking"><i class="fas fa-paw"></i>人気の猫種ランキング<i class="fas fa-paw"></i></h2>
 
-    <h2><span class="border border-3">人気の猫種ランキング</span></h2>
+    <ul>
+      <li><a href="#rank1">1位　雑種(ミックス)</a></li>
+      <li><a href="#rank2">2位　スコティッシュフォールド</a></li>
+      <li><a href="#rank3">3位　マンチカン</a></li>
+      <li><a href="#rank4">4位　アメリカンショートヘア</a></li>
+      <li><a href="#rank5">5位　ノルウェージャンフォレストキャット</a></li>
+      <li><a href="#rank6">6位　ブリティッシュショートヘア</a></li>
+      <li><a href="#rank7">7位　ラグドール</a></li>
+      <li><a href="#rank8">8位　ロシアンブルー</a></li>
+      <li><a href="#rank9">9位　ペルシャ</a></li>
+      <li><a href="#rank10">10位　ベンガル</a></li>
+    </ul>
 
-    <h3 class="ranktitle">第1位は・・・</h3>
+    <h3 class="ranktitle" id="rank1"><i class="fas fa-crown"></i>1位　雑種(ミックス)</h3>
 
     <div class="d-flex align-items-center">
         <div class="flex-shrink-0">
-          <img src="img/cat-rank1.png" alt="..." class="cat-img">
+          <img src="img/cat-rank1.png" alt="雑種(ミックス)" class="cat-img">
         </div>
         <div class="flex-grow-1 ms-3">
-          <span>人気第1位は雑種のねこちゃん！！</span><br>
-          <h2>めちゃかわ！！！</h2>
+          人気1位は雑種(ミックス)の猫。
+          <h3>かわいい。</h3>
+          日本で飼われている猫の約7割は雑種との報告もあり、日常で接する猫たちの大多数は雑種とのこと。<br>
+          キジトラ、白黒、茶トラ、三毛などいろいろなバリエーションがある。
         </div>
       </div>
 
-      <h3 class="ranktitle">第2位は・・・</h3>
+      <h3 class="ranktitle" id="rank2"><i class="fas fa-crown"></i>2位　スコティッシュフォールド</h3>
 
       <div class="d-flex align-items-center">
         <div class="flex-shrink-0">
-          <img src="img/cat-rank2.jpeg" alt="..." class="cat-img">
+          <img src="img/cat-rank2.png" alt="スコティッシュフォールド" class="cat-img">
         </div>
         <div class="flex-grow-1 ms-3">
-          <span>人気第2位はスコティッシュフォールド！！</span><br>
-          <h2>かわいい</h2>
+          人気2位はスコティッシュフォールド。
+          <h3>耳がかわいい。</h3>
+          ちょこんと前向きに折れ曲がった不思議な耳が特徴的。<br>
+          おだやかでおとなしい。
         </div>
       </div>
 
-      <h3 class="ranktitle">第3位は・・・</h3>
+      <h3 class="ranktitle" id="rank3"><i class="fas fa-crown"></i>3位　マンチカン</h3>
 
       <div class="d-flex align-items-center">
         <div class="flex-shrink-0">
-          <img src="img/cat-rank3.png" alt="..." class="cat-img">
+          <img src="img/cat-rank3.png" alt="マンチカン" class="cat-img">
         </div>
         <div class="flex-grow-1 ms-3">
-          <span>人気第3位はマンチカン！！</span><br>
-          <h2>かわいい</h2>
+          人気3位はマンチカン。
+          <h3>手足かわいい。</h3>
+          短い足と、まるまるした顔が特徴的なマンチカン。<br>
+          足は短いがジャンプ力には自信あり。
         </div>
       </div>
+
+      <h3 class="ranktitle" id="rank4"><i class="fas fa-crown"></i>4位　アメリカンショートヘア</h3>
+
+      <div class="d-flex align-items-center">
+        <div class="flex-shrink-0">
+          <img src="img/cat-rank4.png" alt="アメリカンショートヘア" class="cat-img">
+        </div>
+        <div class="flex-grow-1 ms-3">
+          人気4位はアメリカンショートヘア。
+          <h3>模様がかわいい。</h3>
+          大きくて明るい人なつこそうな顔と、筋肉質の頑丈なボディをもつ。<br>
+          温厚で物怖じしないつよい猫。
+        </div>
+      </div>
+
+      <h3 class="ranktitle" id="rank5"><i class="fas fa-crown"></i>5位　ノルウェージャンフォレストキャット</h3>
+
+      <div class="d-flex align-items-center">
+        <div class="flex-shrink-0">
+          <img src="img/cat-rank5.png" alt="ノルウェージャンフォレストキャット" class="cat-img">
+        </div>
+        <div class="flex-grow-1 ms-3">
+          人気5位はノルウェージャンフォレストキャット。
+          <h3>もふもふでかわいい。</h3>
+          長毛で体も大きく、穏やかで優しい性格。<br>
+          普通の猫は約1年で成猫になるが、ノルウェージャンフォレストキャットは成熟するまで3～5年かかるという。
+        </div>
+      </div>
+
+      <h3 class="ranktitle" id="rank6"><i class="fas fa-crown"></i>6位　ブリティッシュショートヘア</h3>
+
+      <div class="d-flex align-items-center">
+        <div class="flex-shrink-0">
+          <img src="img/cat-rank6.png" alt="ブリティッシュショートヘア" class="cat-img">
+        </div>
+        <div class="flex-grow-1 ms-3">
+          人気6位はブリティッシュショートヘア。
+          <h3>まるくてかわいい。</h3>
+          豊満な頰、骨太で力強い四肢に、コロコロとした体付きが印象的。<br>
+          もともと狩猟能力に優れ、農家などで飼われていたこともあり、賢いことでよく知られている。
+        </div>
+      </div>
+
+      <h3 class="ranktitle" id="rank7"><i class="fas fa-crown"></i>7位　ラグドール</h3>
+
+      <div class="d-flex align-items-center">
+        <div class="flex-shrink-0">
+          <img src="img/cat-rank7.png" alt="..." class="cat-img">
+        </div>
+        <div class="flex-grow-1 ms-3">
+          人気7位はラグドール
+          <h3>目が青くてかわいい。</h3>
+          白くてふわふわした長毛と、輝くブルーの瞳が優美なラグドール。<br>
+          体は大きくて、心やさしいラグドールは、人好きで比較的動きも穏や。で、お手入れも楽と、飼いやすい猫。
+        </div>
+      </div>
+
+      <h3 class="ranktitle" id="rank8"><i class="fas fa-crown"></i>8位　ロシアンブルー</h3>
+
+      <div class="d-flex align-items-center">
+        <div class="flex-shrink-0">
+          <img src="img/cat-rank8.png" alt="..." class="cat-img">
+        </div>
+        <div class="flex-grow-1 ms-3">
+          人気8位はロシアンブルー。
+          <h3>凛々しくてかわいい。</h3>
+          気品にあふれた表情、エメラルドグリーンの目色、均整のとれた体型など、まさに北方のプリンス＆プリンセスと呼ぶにふさわしい猫。<br>
+          賢くあまり鳴き声をあげないことから「ボイスレスキャット」と呼ばれる。
+        </div>
+      </div>
+
+      <h3 class="ranktitle" id="rank9"><i class="fas fa-crown"></i>9位　ペルシャ</h3>
+
+      <div class="d-flex align-items-center">
+        <div class="flex-shrink-0">
+          <img src="img/cat-rank9.png" alt="..." class="cat-img">
+        </div>
+        <div class="flex-grow-1 ms-3">
+          人気9位はペルシャ。
+          <h3>鼻がかわいい。</h3>
+          短くつぶれた鼻に、くりっとした瞳、長くて絹のような艶やかな被毛が印象的な猫。<br>
+          おとなしく控えめで、「長毛猫のキング＆クイーン」と称される。
+        </div>
+      </div>
+
+      <h3 class="ranktitle" id="rank10"><i class="fas fa-crown"></i>10位　ベンガル</h3>
+
+      <div class="d-flex align-items-center">
+        <div class="flex-shrink-0">
+          <img src="img/cat-rank10.png" alt="..." class="cat-img">
+        </div>
+        <div class="flex-grow-1 ms-3">
+          人気10位はベンガル。
+          <h3>ワイルドでかわいい。</h3>
+          大きな体型にしては小さ目の頭部、ヒョウのような引き締まった体。小型の猫科動物を彷彿とさせる野性味が魅力。<br>
+          野性的な面を残しつつも温和でフレンドリーな、遊び好きな猫。
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="wrapper">
+        <p>
+          <i class="fas fa-cat"></i>
+          <i class="fas fa-cat"></i>
+          <i class="fas fa-cat"></i>
+        </p>
+      </div>
+    </footer>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
